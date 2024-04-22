@@ -6,7 +6,7 @@ if (DIR_SRCS)
     foreach(libname ${LIBNAMES})
         if (${LIB_NAME} STREQUAL ${libname})
             add_library(${libname} ${CMAKE_LIB_TYPE} ${DIR_SRCS})
-            target_link_libraries(${libname}  "platform" "network" "common" "salof" "libhttp")
+            target_link_libraries(${libname}  "li-platform" "li-network" "li-common" "li-salof" "li-libhttp")
         endif()
     endforeach()
 

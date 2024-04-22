@@ -8,7 +8,7 @@ if (DIR_SRCS)
     foreach(libname ${LIBNAMES})
         if (${LIB_NAME} STREQUAL ${libname})
             add_library(${libname} ${CMAKE_LIB_TYPE} ${DIR_SRCS})
-            target_link_libraries(${libname} "platform" "mbedtls")
+            target_link_libraries(${libname} "li-platform" "li-mbedtls")
         endif()
     endforeach()
 
