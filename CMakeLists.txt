@@ -17,7 +17,7 @@ set(EXECUTABLE_OUTPUT_PATH "${PROJECT_ROOT_PATH}/${OUTDIRS}/bin/")
 set(CMAKE_BUILD_TYPE "Debug")   # Debug Release
 set(CMAKE_LIB_TYPE "SHARED")   # SHARED STATIC
 
-set(CMAKE_C_COMPILER "gcc")
+# set(CMAKE_C_COMPILER "gcc") 
 set(CMAKE_CXX_COMPILER "g++" )
 
 set(CMAKE_C_FLAGS "-Wall")
