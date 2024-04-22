@@ -6,7 +6,10 @@ set(TARGETS "http-client")
 set(SUBDIRS "test" "platform" "network" "common" "libhttp" "httpclient")
 set(INCDIRS  "test" "platform/linux" "common" "common/log" "network/mbedtls/include" "network" "libhttp" "httpclient")
 set(OUTDIRS "build")
-set(LIBNAMES "platform" "network" "common" "salof" "mbedtls" "libhttp" "httpclient")
+
+set(LIBRARY_PREFIX "li")
+set(LIBNAMES "li-platform" "li-network" "li-common" "li-salof" "li-mbedtls" "li-libhttp" "li-httpclient")
+
 set(PROJECT_ROOT_PATH "${PROJECT_SOURCE_DIR}")
 set(LIBRARY_OUTPUT_PATH "${PROJECT_ROOT_PATH}/${OUTDIRS}/lib/")
 set(EXECUTABLE_OUTPUT_PATH "${PROJECT_ROOT_PATH}/${OUTDIRS}/bin/")

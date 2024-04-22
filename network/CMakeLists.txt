@@ -3,7 +3,7 @@ set(SUBDIRS "mbedtls")
 aux_source_directory(. DIR_SRCS)
 
 string(REGEX REPLACE ".*/(.*)" "\\1" LIB_NAME ${CMAKE_CURRENT_SOURCE_DIR}) 
-
+set(LIB_NAME ${LIBRARY_PREFIX}-${LIB_NAME})
 if (DIR_SRCS)
     foreach(libname ${LIBNAMES})
         if (${LIB_NAME} STREQUAL ${libname})

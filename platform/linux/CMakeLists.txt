@@ -3,7 +3,7 @@ aux_source_directory(. DIR_SRCS)
 get_filename_component(PARENT_DIR ${CMAKE_CURRENT_SOURCE_DIR} DIRECTORY)
 
 string(REGEX REPLACE ".*/(.*)" "\\1" LIB_NAME ${PARENT_DIR}) 
-
+set(LIB_NAME ${LIBRARY_PREFIX}-${LIB_NAME})
 if (DIR_SRCS)
     foreach(libname ${LIBNAMES})
         if (${LIB_NAME} STREQUAL ${libname})
