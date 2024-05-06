@@ -416,7 +416,7 @@ int http_interceptor_request(http_interceptor_t *interceptor, http_request_metho
 
         http_request_add_header_form_index(&interceptor->request, 
                                             HTTP_REQUEST_HEADER_CONTENT_TYPE, 
-                                            "text/plain");
+                                            "application/json");
     }
 
     http_message_buffer_reinit(interceptor->message);
